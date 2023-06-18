@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    background-color: indianred;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container .form {
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px indianred;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: indianred;
+    color: white;
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(205, 92, 92, 0.777);
+}
+
+.tasks {
+    background-color: #eee;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.tasks .task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.tasks .task:hover {
+    background-color: #f7f7f7;
+}
+
+.tasks .task.done {
+    opacity: 0.5;
+}
+
+.tasks .task span {
+    font-weight: bold;
+    font-size: 10px;
+    background-color: indianred;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tasks .task span:hover {
+    background-color: rgba(205, 92, 92, 0.777);
+}
